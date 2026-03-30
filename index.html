@@ -596,7 +596,7 @@
     <li><a href="#leadership">Leadership</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="mailto:your@email.com" class="nav-hire">Hire Me</a>
+  <a href="mailto:bannikov.nikita.alekseevich@gmail.com" class="nav-hire">Hire Me</a>
 </nav>
 
 <!-- ─── HERO ─────────────────────────────────────────────── -->
@@ -833,22 +833,16 @@
     <h2 style="font-family:'Playfair Display',serif;">Let's build<br><em style="color:var(--accent)">something great.</em></h2>
     <p>Open to senior engineering roles, staff-level positions, and tech lead opportunities. Remote-friendly. Let's talk.</p>
     <div class="contact-cta-row">
-      <a href="mailto:your@email.com" class="btn-primary">
+      <a href="mailto:bannikov.nikita.alekseevich@gmail.com" class="btn-primary">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-        your@email.com
+        EMAIL
       </a>
       <a href="#" class="btn-outline">Download CV</a>
     </div>
 
     <div class="contact-links">
-      <a href="#" class="contact-link">
+      <a href="https://www.linkedin.com/in/bannikov-nikita/" class="contact-link">
         <span>🔗</span> LinkedIn
-      </a>
-      <a href="#" class="contact-link">
-        <span>🐙</span> GitHub
-      </a>
-      <a href="#" class="contact-link">
-        <span>🐦</span> Twitter / X
       </a>
     </div>
   </div>
@@ -856,12 +850,13 @@
 
 <!-- ─── FOOTER ───────────────────────────────────────────── -->
 <footer>
-  <span class="footer-name">Your Name</span>
+  <span class="footer-name">Nikita</span>
   <span>Senior Fullstack Engineer &amp; Tech Lead</span>
-  <span>© 2025 — All rights reserved</span>
+  <span>© <span id="year"></span> — All rights reserved</span>
 </footer>
 
 <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
   // ─── CURSOR
   const cursor = document.getElementById('cursor');
   document.addEventListener('mousemove', e => {
