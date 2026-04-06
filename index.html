@@ -417,6 +417,84 @@
         <span class="skill-item">High Availability</span>
       </div>
     </div>
+
+    <div class="project-card project-card--full reveal">
+      <div class="project-card-header">
+        <div class="project-card-icon">🏦</div>
+        <a href="#" class="project-card-link" title="View project" style="visibility:hidden">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+      <div class="project-meta">
+        <span><strong>Role:</strong> Solution Architect (Solo Full-Stack Engineer)</span>
+        <span class="project-meta-sep">·</span>
+        <span><strong>Stack:</strong> ASP.NET Core · Angular · Azure AKS · GitHub Actions · EDMS Integration</span>
+      </div>
+
+      <h3>ADCB — BSA (Banking Staff Application)</h3>
+
+      <hr class="project-divider">
+
+      <div class="project-section">
+        <h4 class="project-section-title">Overview</h4>
+        <p>Designed and delivered from scratch a mission-critical internal banking platform for <strong>Abu Dhabi Commercial Bank (ADCB)</strong>, one of the UAE's largest commercial banks. BSA (Banking Staff Application) is a core component of ADCB's <strong>CIBG platform</strong> — the infrastructure powering corporate banking operations. When a business owner registers and submits an account opening request via the mobile app, it flows directly into BSA, where bank staff take over to validate, review, and approve it. The system replaced a fragmented, fully manual process with a structured, automated, and auditable workflow — bringing corporate account opening into a single controlled platform.</p>
+      </div>
+
+      <hr class="project-divider">
+
+      <div class="project-section">
+        <h4 class="project-section-title">The Challenge</h4>
+        <p>Before BSA, bank staff processed every corporate account opening by hand inside the core banking system — entering all data manually, with no standardized approach. Each account was effectively unique, leaving room for inconsistency, human error, and unpredictable turnaround times that stretched from <strong>days to weeks</strong>.</p>
+        <p>The technical challenge was to encode deeply complex banking compliance requirements into software: a strict <strong>4-eyes validation workflow</strong> where a Maker reviews and advances an application and a Checker independently approves it — with the system enforcing that no single person can fulfill both roles. On top of that, the application had to orchestrate automatic regulatory checks against <strong>AECB</strong> (credit bureau), <strong>DCRA</strong> (company registry), and <strong>FSK</strong> (name screening / sanctions) — all UAE-mandated verification services — and only trigger account creation in the core banking system once every gate was cleared. Supporting <strong>10 distinct roles</strong> with independent permission sets, where a single staff member may hold multiple roles simultaneously, added further complexity to an already demanding access control model.</p>
+      </div>
+
+      <hr class="project-divider">
+
+      <div class="project-section">
+        <h4 class="project-section-title">What Was Built</h4>
+        <p>Owned the full project — from requirements gathering with the PO, compliance stakeholders, and scrum team, through architecture, development, and delivery. Key capabilities include:</p>
+        <ul class="project-list">
+          <li><strong>Structured Maker/Checker workflow</strong> enforcing 4-eyes validation — with hard system-level prevention of self-approval — across the full application lifecycle</li>
+          <li><strong>Automated regulatory integrations</strong> with AECB, DCRA, and FSK services, running compliance checks without manual intervention</li>
+          <li><strong>Automatic account provisioning</strong> in the core banking system upon full approval, eliminating re-entry of data</li>
+          <li><strong>Role-based access control</strong> across 10 roles (Support, Maker, Checker, Admin, Viewer, Regional Manager, and others), with multi-role assignment per user</li>
+          <li><strong>EDMS integration</strong> for structured document storage and retrieval throughout the review process</li>
+          <li><strong>Full audit trail</strong> capturing every action, state transition, and data change — providing complete traceability for compliance and dispute resolution</li>
+          <li><strong>Notification system</strong> keeping all relevant roles informed at every stage of the workflow</li>
+          <li><strong>CI/CD pipeline</strong> via GitHub Actions with automated deployment to <strong>Azure AKS</strong>, including SonarQube static analysis (80%+ code coverage enforced) and Trivy container vulnerability scanning — meeting the bank's enterprise security standards</li>
+        </ul>
+      </div>
+
+      <hr class="project-divider">
+
+      <div class="project-section">
+        <h4 class="project-section-title">Impact</h4>
+        <p>Since its launch in <strong>2025</strong>, BSA has transformed corporate account onboarding at ADCB:</p>
+        <ul class="project-list">
+          <li>Account opening time reduced from <strong>days or weeks to under 30 minutes</strong> — end to end</li>
+          <li>Eliminated manual data entry and the inconsistency of unstructured per-account processing</li>
+          <li><strong>99.99% uptime</strong> on a platform handling live banking operations</li>
+          <li>Established a single, auditable, compliant standard for corporate account opening across the bank</li>
+        </ul>
+      </div>
+
+      <hr class="project-divider">
+
+      <div class="skill-list">
+        <span class="skill-item">ASP.NET Core</span>
+        <span class="skill-item">Angular</span>
+        <span class="skill-item">Azure AKS</span>
+        <span class="skill-item">GitHub Actions</span>
+        <span class="skill-item">SonarQube</span>
+        <span class="skill-item">Trivy</span>
+        <span class="skill-item">EDMS</span>
+        <span class="skill-item">Role-Based Access</span>
+        <span class="skill-item">Corporate Banking</span>
+        <span class="skill-item">FinTech</span>
+        <span class="skill-item">Solo Project</span>
+      </div>
+    </div>
   </div>
 </section>
 
