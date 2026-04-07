@@ -21,20 +21,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ─── CURSOR ─────────────────────────────────── */
-.cursor {
-  width: 10px; height: 10px;
-  background: var(--accent);
-  border-radius: 50%;
-  position: fixed;
-  top: 0; left: 0;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform .12s ease, width .2s, height .2s, background .2s;
-}
-.cursor.grow { width: 36px; height: 36px; background: rgba(200,57,43,.25); }
-
 /* ─── NAV ─────────────────────────────────────── */
 nav {
   position: fixed; top: 0; left: 0; right: 0;
@@ -442,18 +428,6 @@ h2 {
   line-height: 1.8;
   color: rgba(245,242,236,.75);
   margin-bottom: 2rem;
-}
-.leadership-big {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(5rem, 12vw, 10rem);
-  font-weight: 900;
-  line-height: .9;
-  color: var(--paper);
-  opacity: .08;
-  position: absolute;
-  top: 0; right: 2rem;
-  pointer-events: none;
-  user-select: none;
 }
 .leadership-right { position: relative; }
 
